@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://goldenmove.net/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Find out which region in Portugal best matches your lifestyle. A soft, thoughtful quiz designed for Americans planning their dream retirement in Portugal.">
+  <meta name="keywords" content="Portugal, retirement, quiz, expats, relocation, Golden Move, lifestyle, best place to live">
+  <meta name="author" content="Golden Move">
+  <title>Where Do I Belong in Portugal? | Golden Move</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Where Do I Belong in Portugal?</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #FDFBF7;
+      color: #333333;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #2A5173;
+      font-size: 2.2em;
+      border-bottom: 2px solid #D8B066;
+      padding-bottom: 10px;
+    }
+    .question p {
+      color: #7A8B71;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .answers {
+      margin-left: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #2A5173;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1C344B;
+    }
+    #result {
+      margin-top: 30px;
+      padding: 20px;
+      background: #F5E3C3;
+      border-left: 6px solid #D8B066;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+    #result h2 {
+      color: #2A5173;
+      font-family: 'Playfair Display', serif;
+    }
+
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+    h1 { color: #2c3e50; }
+    .question { margin-bottom: 20px; }
+    .answers { margin-left: 20px; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+    #result { margin-top: 30px; padding: 20px; background: #ecf0f1; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<h1>🧭 Where Do I Belong in Portugal?</h1>
+<form id="quizForm">
+<div class="question"><p>1. What kind of weather do you feel best in?</p><div class="answers"><label><input type="radio" name="q1" value="algarve,alentejo"> ☀ Hot and dry, with long summers</label><br><label><input type="radio" name="q1" value="porto_north,central"> 🌦 Temperate and varied, with distinct seasons</label><br><label><input type="radio" name="q1" value="lisbon,cascais"> 🌤 Mild and breezy all year long</label><br><label><input type="radio" name="q1" value="islands"> 🌿 Moist, green, dramatic nature</label><br></div></div><div class="question"><p>2. What type of community do you feel most at home in?</p><div class="answers"><label><input type="radio" name="q2" value="lisbon,porto_north"> 🌆 Urban and dynamic</label><br><label><input type="radio" name="q2" value="cascais,central"> 🏘 Mid-sized towns with tradition</label><br><label><input type="radio" name="q2" value="alentejo,serra"> 🌾 Rural and peaceful</label><br><label><input type="radio" name="q2" value="algarve,islands"> 🌍 International and lively</label><br></div></div><div class="question"><p>3. How would you spend an ideal weekday?</p><div class="answers"><label><input type="radio" name="q3" value="algarve,islands"> 👟 Walking, exploring, enjoying the outdoors</label><br><label><input type="radio" name="q3" value="alentejo,central"> 📚 Reading, writing, gardening, in peace</label><br><label><input type="radio" name="q3" value="lisbon,porto_north"> 🥂 Socialising, cafés, art and culture</label><br><label><input type="radio" name="q3" value="cascais,alentejo"> 🍷 Markets in the morning, long lunches, sunsets</label><br></div></div><div class="question"><p>4. What draws you most in Portuguese culture?</p><div class="answers"><label><input type="radio" name="q4" value="porto_north,central,islands"> 🎉 Local festivals and community events</label><br><label><input type="radio" name="q4" value="alentejo,porto_north"> 🍷 Food, wine and slow living</label><br><label><input type="radio" name="q4" value="lisbon,cascais"> 🎭 Contemporary culture and events</label><br><label><input type="radio" name="q4" value="islands,serra"> 🌄 Nature, isolation and quiet beauty</label><br></div></div><div class="question"><p>5. What matters most in your future home?</p><div class="answers"><label><input type="radio" name="q5" value="algarve,cascais"> 🏖 Proximity to the beach</label><br><label><input type="radio" name="q5" value="serra,islands"> 🏞 Countryside or mountain views</label><br><label><input type="radio" name="q5" value="lisbon,porto_north"> 🏛 Access to culture and infrastructure</label><br><label><input type="radio" name="q5" value="alentejo,central"> 🕊 Calm and connection with nature</label><br></div></div><div class="question"><p>6. How do you feel about meeting other expats?</p><div class="answers"><label><input type="radio" name="q6" value="algarve,cascais,islands"> 👥 I want a big international circle</label><br><label><input type="radio" name="q6" value="lisbon,porto_north"> 🤝 I want locals and a few expats</label><br><label><input type="radio" name="q6" value="alentejo,porto_north"> 🇵🇹 I want to fully integrate in Portuguese life</label><br><label><input type="radio" name="q6" value="islands,interior"> 🧘 I’m fine being mostly on my own or with nature</label><br></div></div><div class="question"><p>7. What’s your ideal pace of life?</p><div class="answers"><label><input type="radio" name="q7" value="lisbon,porto_north"> 🚀 Fast and connected</label><br><label><input type="radio" name="q7" value="cascais,central"> 🌿 Balanced and spacious</label><br><label><input type="radio" name="q7" value="alentejo,interior"> 🐌 Slow and mindful</label><br><label><input type="radio" name="q7" value="islands"> 🌀 In sync with nature</label><br></div></div><div class="question"><p>8. What kind of scenery makes you feel most alive?</p><div class="answers"><label><input type="radio" name="q8" value="algarve,islands"> 🌊 Waves, cliffs, and ocean light</label><br><label><input type="radio" name="q8" value="alentejo,douro"> 🍃 Vineyards, hills, golden plains</label><br><label><input type="radio" name="q8" value="serra,central"> 🌳 Forests, rivers, mountain air</label><br><label><input type="radio" name="q8" value="lisbon,porto_north"> 🏙 Rooftops, cafés, historic squares</label><br></div></div><div class="question"><p>9. What kind of food experience matters most to you?</p><div class="answers"><label><input type="radio" name="q9" value="lisbon,cascais,algarve"> 🍽 International dining options</label><br><label><input type="radio" name="q9" value="porto_north,alentejo"> 🧀 Local traditional dishes</label><br><label><input type="radio" name="q9" value="central,islands"> 🥖 Visiting markets, cooking at home</label><br><label><input type="radio" name="q9" value="douro,alentejo"> 🍷 Wine routes, regional tastings</label><br></div></div><div class="question"><p>10. How adventurous are you with a lifestyle change?</p><div class="answers"><label><input type="radio" name="q10" value="islands,alentejo"> ✈ Very! I’d love something truly different</label><br><label><input type="radio" name="q10" value="cascais,algarve"> 🌍 I want new experiences but some familiarity</label><br><label><input type="radio" name="q10" value="central,porto_north"> 🧩 I like a mix of structure and discovery</label><br><label><input type="radio" name="q10" value="lisbon,cascais"> 🔄 I prefer a smooth, easy transition</label><br></div></div>
+  <button type="button" onclick="calculateResult()">See My Region</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+  function calculateResult() {
+    const form = document.getElementById('quizForm');
+    const formData = new FormData(form);
+    const scores = {};
+
+    for (let [_, value] of formData.entries()) {
+      value.split(",").forEach(region => {
+        scores[region] = (scores[region] || 0) + 1;
+      });
+    }
+
+    const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 3);
+
+    const descriptions = {
+      algarve: "☀ Algarve: Sun, beaches, and vibrant expat life.",
+      alentejo: "🌾 Alentejo: Slow rhythms, authenticity, and rural beauty.",
+      lisbon: "🏙 Lisbon: Urban energy, culture and connection.",
+      cascais: "🌊 Cascais: Coastal charm with elegance and access to Lisbon.",
+      porto_north: "🍷 Porto & North: Heritage, community, and identity.",
+      central: "🏞 Central: Calm living, balance and accessibility.",
+      islands: "🌄 Islands: Nature, adventure and introspective peace.",
+      serra: "⛰ Serra da Estrela: Majestic mountains and serene isolation.",
+      interior: "🏡 Interior: Affordable, rural life and authenticity.",
+      douro: "🍇 Douro: Vineyards, traditions and breathtaking views."
+    };
+
+    let resultHTML = "<h2>Your Top Regions:</h2><ul>";
+    sorted.forEach(([region, score]) => {
+      resultHTML += `<li><strong>${descriptions[region] || region}</strong> (${score} pts)</li>`;
+    });
+    resultHTML += "</ul>";
+
+    document.getElementById("result").innerHTML = resultHTML;
+  }
+</script>
+
+</body>
+</html>
